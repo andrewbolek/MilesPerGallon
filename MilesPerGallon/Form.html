@@ -1,0 +1,61 @@
+﻿@{
+    if (IsPost) {
+        string FirstName = Request.Form["firstname"];
+        string LastName = Request.Form["lastname"];
+        string CarModel = Request.Form["lastname"];
+        double MilesDriven = Request.Form["milesdriven"]
+        int GallonsFilled = Request.Form["gallonsfilled"]
+
+
+<text>
+    You entered: <br />
+    First Name: @firstname <br />
+    Last Name: @lastname <br />
+    Car Model: @carmodel <br />
+    Miles Driven: @milesdriven <br />
+    Gallons Filled: @gallonsfilled <br />
+</text>
+    }
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Log</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Car Log</legend>
+            <div>
+                <label for="FirstName">First Name:</label>
+                <input type="text" name="FirstName" value="" />
+            </div>
+            <div>
+                <label for="LastName">Last Name:</label>
+                <input type="text" name="LastName" value="" />
+            </div>
+            <div>
+                <label for="CarModel">Car Model:</label>
+                <input type="text" name="CarModel" value="" />
+            </div>
+            <div>
+                <label for="MilesDriven">Miles Driven:</label>
+                <input type="text" name="MilesDriven" value="" />
+            </div>
+            <div>
+                <label for="Gallonfilled">Gallons Filled:</label>
+                <input type="text" name="GallonsFilled" value="" />
+
+            </div>
+
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" value="Submit" class="submit" />
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
